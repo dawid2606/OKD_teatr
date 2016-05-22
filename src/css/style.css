@@ -1,0 +1,375 @@
+a img {
+    border: 0;
+}
+
+html,
+body,
+div,
+span,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+q,
+blockquote,
+a,
+b,
+strong,
+i,
+label,
+form,
+fieldset,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+img,
+object,
+input {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: none;
+    font-style: normal;
+    font-family: 'Dosis', sans-serif;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+#mainHeader {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+
+#mainLogo {
+    font-size: 250%;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #00264d;
+    padding: 10px;
+    float: left;
+}
+
+#mainLogo img {
+    width: 50px;
+}
+
+#mainLogo:hover {
+    cursor: pointer;
+}
+
+.mainBlue {
+    color: #12A5F4;
+    text-shadow: 2px 1px #00264d;
+}
+
+#mainHeader div.active {
+    background-color: #e6e6e6;
+}
+
+.box {
+    height: 35px;
+    width: 100px;
+    float: right;
+    padding: 10px;
+    font-size: 175%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.box:hover {
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.box:hover i {
+    color: #12A5F4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    border-radius: 5px;
+}
+
+.largeInput {
+    height: 35px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #12A5F4;
+}
+
+i {
+    color: #5d5d5d;
+}
+
+@media(min-width: 641px) {
+    .largeInput {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media(max-width: 640px) {
+    .largeInput {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.buttonMedium {
+    border-radius: 0;
+    width: 250px;
+    height: 35px;
+    background-color: #12A5F4;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 1px solid #12A5F4;
+    display: block;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+.buttonMedium:hover {
+    background-color: white;
+    color: #12A5F4;
+    transition: 0.1s;
+}
+
+button[disabled] {
+    opacity: 0.3;
+}
+
+button[disabled]:hover {
+    background-color: #12A5F4;
+    color: white;
+}
+
+.art {
+    background-color: rgb(230, 230, 230);
+    width: 23%;
+    min-height: 150px;
+    margin: 1%;
+    -webkit-box-shadow: 6px 10px 5px 0px rgba(158, 158, 158, 0.66);
+    -moz-box-shadow: 6px 10px 5px 0px rgba(158, 158, 158, 0.66);
+    box-shadow: 6px 10px 5px 0px rgba(158, 158, 158, 0.66);
+    float: right;
+    transition: 0.3s all;
+}
+
+.clear {
+    clear: both;
+}
+
+.arts {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.rotate:hover {
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+    transition: 0.3s all;
+}
+
+.rotate {
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.headerArt {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.info {
+    margin: 5px;
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+}
+
+.artOpen {
+    width: 80%;
+    min-height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #12A5F4;
+}
+
+.moreInfo {
+    margin-left: 20px;
+}
+
+.details img {
+    float: left;
+}
+
+.actor {
+    width: 20%;
+}
+
+.actors img {
+    width: 200px;
+}
+
+table {
+    border: 1px solid #e6e6e6;
+}
+
+table td {
+    padding: 3px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#tooltip {
+    width: auto;
+}
+
+.animate-if.ng-enter {
+    -webkit-transition: 1s linear all;
+    -moz-transition: 1s linear all;
+    -ms-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    transition: 1s linear all;
+}
+
+.animate-if.ng-leave {
+    -webkit-transition: 0s linear all;
+    -moz-transition: 0s linear all;
+    -ms-transition: 0s linear all;
+    -o-transition: 0s linear all;
+    transition: 0s linear all;
+}
+
+.animate-if.ng-enter {
+    opacity: 0;
+}
+
+.animate-if.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.animate-if.ng-leave {
+    opacity: 1;
+}
+
+.animate-if.ng-leave.ng-leave-active {
+    opacity: 1;
+}
+
+.slider {
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 40%;
+    font-size: 80px;
+    cursor: pointer;
+    margin-top: 15%;
+}
+
+.left:hover i,
+.right:hover i {
+    color: #12A5F4;
+}
+
+.left {
+    left: 5%;
+}
+
+.right {
+    right: 5%;
+}
+
+.sliderParent {
+    position: relative;
+    width: 100%;
+}
+
+.slider img {
+    position: absolute;
+    width: 100%;
+    -webkit-box-shadow: 6px 10px 5px 0px rgba(158, 158, 158, 0.66);
+    -moz-box-shadow: 6px 10px 5px 0px rgba(158, 158, 158, 0.66);
+    box-shadow: 6px 10px 5px 0px rgba(158, 158, 158, 0.66);
+}
+
+#footer{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #e6e6e6;
+    margin-top: 60px;
+}
+
+.center{
+    text-align:center;
+    font-size: 20px;
+}
+.socials{
+    float: right;
+}
+
+.socials i{
+    margin-left: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+}
+.socials i:hover{
+    color: #12A5F4;
+}

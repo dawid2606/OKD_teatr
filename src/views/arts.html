@@ -1,0 +1,24 @@
+<div id="outer">
+    <div class="arts">
+    <div class="title">Repertuar teatru</div>
+        <div class="art" ng-repeat="art in arts" ng-click="selectArt($index)" ng-hide="selectedArt == '-1' || (selectedArt != $index && selectedArt)" ng-class="{'artOpen' : selectedArt == $index, 'rotate' : !selectedArt}">
+            <div class="headerArt">
+            <i class="fa fa-times close" aria-hidden="true" ng-click="close()" ng-if="selectedArt"></i>
+                {{art.name}}
+            </div>
+            <div class="info">
+            {{art.description}}
+            </div>
+            <div class="details" ng-if="selectedArt && selectedArt != -1">
+            <img ng-src="{{art.pictureUrl}}" />
+            <div class="moreInfo">
+            <p>Tytuł: {{art.name}}</p>
+            <p>Reżyser: {{art.director}}</p>
+            <p>Występują: <span ng-repeat="actor in art.actors">{{actor.name}} </span></p>
+            <button type="button" class="buttonMedium" ng-click="buyTicket(art.id)">Kup bilet!</button>
+            </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

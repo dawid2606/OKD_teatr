@@ -1,0 +1,23 @@
+<div id="outer">
+    <div>
+        <div class="arts">
+            <div class="title">Nasi aktorzy</div>
+            <table class="actors">
+                <tbody>
+                    <tr>
+                        <td>Zdjęcie</td>
+                        <td>Imię</td>
+                        <td>Nazwisko</td>
+                        <td>Opis kariery</td>
+                    </tr>
+                    <tr ng-repeat="actor in actors">
+                        <td><img ng-src="{{actor.photoUrl}}" /></td>
+                        <td>{{actor.name}}</td>
+                        <td>{{actor.lastname}}</td>
+                        <td>{{actor.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

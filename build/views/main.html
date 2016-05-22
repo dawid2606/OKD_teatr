@@ -1,0 +1,57 @@
+<div id="outer">
+    <div id="mainHeader">
+        <div id="mainLogo" ui-sref="main">
+        <span class="mainBlue">T</span>eatr
+        <img src="img/teatr.png" />
+        </div>
+
+        <div ng-if="logged">
+
+        <div class="box" ui-sref="login" ng-click="logOut()" ng-mouseover="showTooltips('wyloguj', true)" ng-mouseleave="showTooltips('wyloguj', false)">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        </div>
+
+        <div class="box" ui-sref="profil" ng-class="{'active' : currentState == 'profil'}" ng-mouseover="showTooltips('mój profil', true)" ng-mouseleave="showTooltips('mój profil', false)">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+       
+
+        </div>
+
+
+        <div class="box" ui-sref="register" ng-class="{'active' : currentState == 'register'}" ng-if="!logged" ng-mouseover="showTooltips('rejestracja', true)" ng-mouseleave="showTooltips('rejestracja', false)">
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+        </div>
+
+        <div class="box" ui-sref="login" ng-class="{'active' : currentState == 'login'}" ng-if="!logged" ng-mouseover="showTooltips('logowanie', true)" ng-mouseleave="showTooltips('logowanie', false)">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+        <div class="box" ui-sref="actors" ng-class="{'active' : currentState == 'actors'}" ng-mouseover="showTooltips('aktorzy', true)" ng-mouseleave="showTooltips('aktorzy', false)">
+        <i class="fa fa-male" aria-hidden="true"></i>
+        </div>
+
+        <div class="box" ui-sref="arts" ng-class="{'active' : currentState == 'arts'}" ng-mouseover="showTooltips('repertuar', true)" ng-mouseleave="showTooltips('repertuar', false)">
+        <i class="fa fa-university" aria-hidden="true"></i>
+        </div>
+
+        <div class="box" ui-sref="home" ng-class="{'active' : currentState == 'home'}" ng-mouseover="showTooltips('Strona główna', true)" ng-mouseleave="showTooltips('Strona główna', false)">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        </div>
+
+        
+
+
+        
+        <div id="tooltip" ng-if="alert" class="box">
+            {{alert}}
+        </div>
+        
+    </div>
+
+    <div class="ui-view-container"><div class="fade" ui-view></div></div>
+<div ng-include src="'views/footer.html'" style="margin-top: 60px"></div>
+</div>
+
+ 
